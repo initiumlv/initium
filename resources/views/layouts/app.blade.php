@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional software development services specializing in retail, wholesale, and warehouse management solutions. Expert in Laravel, Livewire, and modern web technologies.">
     <title>{{ config('app.name', 'Initium') }}</title>
 
     @if(config('analytics.google_analytics_id'))

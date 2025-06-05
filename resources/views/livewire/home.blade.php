@@ -5,6 +5,7 @@
     <button @click="sidebarOpen = !sidebarOpen" 
             x-show="!sidebarOpen"
             x-cloak
+            aria-label="{{ __('Open menu') }}"
             class="fixed top-4 left-4 z-50 bg-gray-800/50 backdrop-blur-sm rounded-xl p-2 opacity-70 hover:opacity-100 transition-all duration-300 animate-border-flow border-2 border-purple-500/30">
         <div class="relative z-10">
             <x-heroicon-o-bars-3 class="w-6 h-6 text-white" />
@@ -19,10 +20,11 @@
         <div class="relative z-10 h-full flex flex-col">
             <div class="p-4 md:p-6">
                 <div class="mb-6 md:mb-8 flex items-center justify-between">
-                    <h1 class="text-xl md:text-2xl font-bold bg-clip-text text-transparent uppercase bg-gradient-to-r from-purple-400 to-pink-600">
+                    <div class="text-xl md:text-2xl font-bold bg-clip-text text-transparent uppercase bg-gradient-to-r from-purple-400 to-pink-600">
                         Initium
-                    </h1>
+                    </div>
                     <button @click="sidebarOpen = false" 
+                            aria-label="{{ __('Close menu') }}"
                             class="bg-gray-800/30 backdrop-blur-sm rounded-xl p-1.5 opacity-70 hover:opacity-100 transition-all duration-300 animate-border-flow border-2 border-purple-500/20">
                         <x-heroicon-o-x-mark class="w-5 h-5 text-white" />
                     </button>
@@ -43,7 +45,11 @@
 
             {{-- Language Switcher --}}
             <div class="mt-auto p-4 md:p-6 border-t border-gray-800/30 relative" x-data="{ open: false }">
-                <button @click="open = !open" class="w-full group relative bg-gray-800/30 backdrop-blur-sm rounded-xl p-3 opacity-70 hover:opacity-100 transition-all duration-300 animate-border-flow border-2 border-purple-500/20">
+                <button @click="open = !open" 
+                        aria-label="{{ __('Change language') }}"
+                        aria-expanded="false"
+                        x-bind:aria-expanded="open"
+                        class="w-full group relative bg-gray-800/30 backdrop-blur-sm rounded-xl p-3 opacity-70 hover:opacity-100 transition-all duration-300 animate-border-flow border-2 border-purple-500/20">
                     <div class="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-pink-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <div class="relative z-10 flex items-center justify-between">
                         <div class="flex items-center gap-3">
@@ -101,7 +107,6 @@
         {{-- Hero section --}}
         <div class="text-center mb-16">
             <div class="relative inline-block">
-       
                 <h1 class="relative text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 animate-gradient uppercase filter drop-shadow-[0_0_0.5rem_#000000]">
                     Initium
                 </h1>
@@ -111,8 +116,9 @@
             </p>
         </div>
 
-        {{-- Services grid --}}
+        {{-- Services Section --}}
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <h2 class="sr-only">{{ __('Our Services') }}</h2>
             @foreach($services as $service)
                 <div class="group relative bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 opacity-70 group-hover:opacity-100 transition-opacity duration-300 hover:bg-gray-800/70 hover:scale-105">
                     <div class="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -161,6 +167,7 @@
 
         {{-- Solutions Section --}}
         <div class="w-full max-w-7xl mx-auto mt-10">
+            <h2 class="text-3xl font-bold text-white text-center mb-12">{{ __('Our Solutions') }}</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 @foreach($solutions as $solution)
                     <div class="group relative bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 opacity-70 group-hover:opacity-100 transition-all duration-300 hover:bg-gray-800/70 hover:scale-[1.02]">
