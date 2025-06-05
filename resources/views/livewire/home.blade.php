@@ -1,7 +1,7 @@
 <div class="min-h-screen w-full bg-black text-white relative overflow-hidden flex items-center justify-center" 
     x-data="{ sidebarOpen: false }"
     x-init="sidebarOpen = false">
-    {{-- Menu Button (only visible when sidebar is closed) --}}
+
     <button @click="sidebarOpen = !sidebarOpen" 
             x-show="!sidebarOpen"
             x-cloak
@@ -12,6 +12,7 @@
     </button>
 
     {{-- Sidebar --}}
+
     <div x-cloak
          class="fixed left-0 top-0 h-full w-64 md:w-80 backdrop-blur-xl border-r border-gray-800/30 z-40 overflow-hidden transition-transform duration-300"
          :class="{'translate-x-0': sidebarOpen, '-translate-x-full': !sidebarOpen}">
