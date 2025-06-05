@@ -14,23 +14,6 @@ A modern, responsive website for Initium, showcasing IT and web development serv
 - **Languages**: PHP, JavaScript, HTML, CSS
 - **Database**: MySQL/PostgreSQL
 
-## Services Showcased
-
-1. Web Programming
-2. Mobile Development
-3. E-Commerce Development
-4. AI Integrations
-5. Custom Applications
-6. Analytics (Power BI)
-7. API Integrations
-
-## Solutions Offered
-
-1. Search Engine Optimization
-2. Digital Marketing
-3. IT Support
-4. Analytics & Reporting
-
 ## Getting Started
 
 ### Prerequisites
