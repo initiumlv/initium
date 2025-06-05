@@ -161,7 +161,6 @@
 
         {{-- Solutions Section --}}
         <div class="w-full max-w-7xl mx-auto mt-10">
-  
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 @foreach($solutions as $solution)
                     <div class="group relative bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 opacity-70 group-hover:opacity-100 transition-all duration-300 hover:bg-gray-800/70 hover:scale-[1.02]">
@@ -190,6 +189,59 @@
             </div>
         </div>
 
+        {{-- Specializations Section --}}
+        <div class="w-full max-w-7xl mx-auto mt-20">
+            <h2 class="text-3xl font-bold text-white text-center mb-12">{{ __('Our Specialization') }}</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                @foreach($specializations as $specialization)
+                    <div class="group relative bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 opacity-70 group-hover:opacity-100 transition-all duration-300 hover:bg-gray-800/70 hover:scale-[1.02]">
+                        <div class="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="relative z-10">
+                            <div class="w-14 h-14 bg-purple-500/10 rounded-lg flex items-center justify-center mb-6">
+                                <x-dynamic-component :component="'heroicon-o-' . $specialization['icon']" class="w-7 h-7 text-purple-400" />
+                            </div>
+                            <h3 class="text-2xl font-semibold mb-3 text-white">
+                                {{ $specialization['title'] }}
+                            </h3>
+                            <p class="text-gray-400 mb-6">
+                                {{ $specialization['description'] }}
+                            </p>
+                            <div class="grid grid-cols-2 gap-3">
+                                @foreach($specialization['features'] as $feature)
+                                    <div class="flex items-center gap-2 text-sm text-gray-300">
+                                        <x-heroicon-s-check-circle class="w-5 h-5 text-purple-400" />
+                                        {{ $feature }}
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+
+        {{-- Technologies Section --}}
+        <div class="w-full max-w-7xl mx-auto mt-20">
+            <h2 class="text-3xl font-bold text-white text-center mb-12">{{ __('Our Tech Stack') }}</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                @foreach($technologies as $tech)
+                    <div class="group relative bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 opacity-70 group-hover:opacity-100 transition-all duration-300 hover:bg-gray-800/70 hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="relative z-10 flex flex-col items-center text-center">
+                            <div class="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mb-4">
+                                <x-dynamic-component :component="'heroicon-o-' . $tech['icon']" class="w-6 h-6 text-purple-400" />
+                            </div>
+                            <h3 class="text-lg font-semibold text-white mb-2">{{ $tech['name'] }}</h3>
+                            <p class="text-sm text-gray-400">{{ $tech['description'] }}</p>
+                            <span class="mt-3 px-3 py-1 text-xs font-medium text-purple-400 bg-purple-500/10 rounded-full">
+                                {{ $tech['category'] }}
+                            </span>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+
         {{-- Footer --}}
         <footer class="w-full max-w-7xl mx-auto mt-20 mb-10">
             <div class="border-t border-gray-800 pt-8">
@@ -208,8 +260,8 @@
                         <p class="text-gray-400">{{ config('contact.phone') }}</p>
                     </div>
                     <div class="text-center md:text-right">
-                        <h3 class="text-lg font-semibold text-white mb-4">{{ __('Legal') }}</h3>
-                        <p class="text-gray-400">© {{ date('Y') }} SIA Aetherium</p>
+                        <h3 class="text-lg font-semibold text-white mb-4">{{ __('Copyright') }}</h3>
+                        <p class="text-gray-400">© {{ date('Y') }} {{ config('contact.company.name') }}</p>
                         <p class="text-gray-400">{{ __('All rights reserved') }}</p>
                     </div>
                 </div>

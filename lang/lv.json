@@ -1,6 +1,6 @@
 {
     "Web Programming": "Web Aplikācijas",
-    "Custom web applications and websites built with modern technologies": "Pielāgotas tīmekļa lietotnes un mājaslapas, izveidotas ar mūsdienīgām tehnoloģijām",
+    "Custom web applications and websites built with modern technologies": "Pielāgotas web aplikācijas un mājaslapas, izveidotas ar mūsdienīgām tehnoloģijām",
 
     "Mobile Development": "Mobilā Izstrāde",
     "iOS and Android applications built with NativePHP": "iOS un Android lietotnes, izveidotas ar NativePHP",
@@ -19,7 +19,7 @@
     "Transforming ideas into innovative digital solutions": "Pārveidojam idejas inovatīvos digitālos risinājumos",
 
     "Get in Touch": "Jautājumi?",
-    "Ready to transform your ideas into reality? Contact us for a free consultation and let's discuss how we can help your business grow.": "Esat gatavi pārvērt jūsu idejas realitātē? Sazinieties ar mums bezmaksas konsultācijai un apspriedīsim, kā mēs varam palīdzēt jūsu uzņēmumam augt.",
+    "Ready to transform your ideas into reality? Contact us for a free consultation and let's discuss how we can help your business grow.": "Gatavi pārvērst savas idejas realitātē? Sazinieties ar mums bezmaksas konsultācijai un apspriedīsim, kā mēs varam palīdzēt jūsu uzņēmumam augt.",
     "English": "Angļu",
     "Latvian": "Latviešu",
     "Home": "Sākums",
@@ -64,5 +64,11 @@
     "Security Updates": "Drošības Atjauninājumi",
     "Performance Monitoring": "Veiktspējas Uzraudzība",
 
-    "Open Source": "Atvērtais Kods"
+    "Open Source": "Atvērtais Kods",
+    "Copyright": "Autortiesības",
+
+    "Our Services": "Pakalpojumi",
+    "Our Solutions": "Risinājumi",
+    "Our Tech Stack": "Izmantotās Tehnoloģijas"
+
 }

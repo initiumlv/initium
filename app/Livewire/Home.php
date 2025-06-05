@@ -13,6 +13,8 @@ class Home extends Component
     public array $services = [];
     public array $solutions = [];
     public array $menu = [];
+    public array $technologies = [];
+    public array $specializations = [];
 
     protected function rules(): array
     {
@@ -29,13 +31,124 @@ class Home extends Component
             [
                 'title' => __('Home'),
                 'icon' => 'home',
-                'url' => '#'
+                'url' => '/'
             ],
             [
                 'title' => __('Open Source'),
                 'icon' => 'code-bracket-square',
                 'url' => 'https://github.com/initiumlv'
             ]
+        ];
+
+        $this->specializations = [
+            [
+                'title' => __('Retail'),
+                'description' => __('Point of sale systems, inventory management, and customer loyalty solutions'),
+                'icon' => 'shopping-bag',
+                'features' => [
+                    __('POS Systems'),
+                    __('Inventory Management'),
+                    __('Customer Loyalty'),
+                    __('E-commerce Integration')
+                ]
+            ],
+            [
+                'title' => __('Wholesale'),
+                'description' => __('B2B platforms, order management, and supplier integration solutions'),
+                'icon' => 'truck',
+                'features' => [
+                    __('Order Management'),
+                    __('Supplier Portal'),
+                    __('Price Management'),
+                    __('Bulk Operations')
+                ]
+            ],
+            [
+                'title' => __('Warehouse'),
+                'description' => __('Warehouse management systems, logistics, and inventory tracking'),
+                'icon' => 'building-office',
+                'features' => [
+                    __('WMS Solutions'),
+                    __('Inventory Tracking'),
+                    __('Logistics Management'),
+                    __('Barcode Systems')
+                ]
+            ],
+        ];
+
+        $this->technologies = [
+            [
+                'name' => 'Laravel',
+                'description' => __('Modern PHP framework for web artisans'),
+                'icon' => 'code-bracket-square',
+                'category' => 'Backend'
+            ],
+            [
+                'name' => 'Livewire',
+                'description' => __('Full-stack framework for Laravel'),
+                'icon' => 'bolt',
+                'category' => 'Frontend'
+            ],
+            [
+                'name' => 'Alpine.js',
+                'description' => __('Lightweight JavaScript framework'),
+                'icon' => 'code-bracket-square',
+                'category' => 'Frontend'
+            ],
+            [
+                'name' => 'Tailwind CSS',
+                'description' => __('Utility-first CSS framework'),
+                'icon' => 'paint-brush',
+                'category' => 'Frontend'
+            ],
+            [
+                'name' => 'NativePHP',
+                'description' => __('Native mobile apps with Laravel'),
+                'icon' => 'device-phone-mobile',
+                'category' => 'Mobile'
+            ],
+            [
+                'name' => 'MySQL',
+                'description' => __('Relational database management system'),
+                'icon' => 'circle-stack',
+                'category' => 'Database'
+            ],
+            [
+                'name' => 'Microsoft SQL Server',
+                'description' => __('Enterprise database management system'),
+                'icon' => 'circle-stack',
+                'category' => 'Database'
+            ],
+            [
+                'name' => 'Laravel Cloud',
+                'description' => __('Managed hosting platform for Laravel applications'),
+                'icon' => 'cloud',
+                'category' => 'Cloud'
+            ],
+            [
+                'name' => 'Filament',
+                'description' => __('Admin panel & form builder for Laravel'),
+                'icon' => 'adjustments-horizontal',
+                'category' => 'Admin'
+            ],
+            [
+                'name' => 'Laravel Nova',
+                'description' => __('Premium administration panel for Laravel'),
+                'icon' => 'sparkles',
+                'category' => 'Admin'
+            ],
+            [
+                'name' => 'PHP',
+                'description' => __('Server-side scripting language for web development'),
+                'icon' => 'code-bracket-square',
+                'category' => 'Backend'
+            ],
+            [
+                'name' => '.NET',
+                'description' => __('Cross-platform framework for building modern applications'),
+                'icon' => 'code-bracket-square',
+                'category' => 'Backend'
+            ],
         ];
 
         $this->services = [
@@ -121,7 +234,6 @@ class Home extends Component
                     __('ROI Measurement')
                 ]
             ],
-      
         ];
     }
 
