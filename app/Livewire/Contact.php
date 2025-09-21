@@ -15,7 +15,11 @@ class Contact extends Component
 
     public function submit(): void
     {
-        $this->validate();
+        $this->validate([
+            'name' => 'required|min:3|max:50',
+            'email' => 'required|email|min:3|max:60',
+            'question' => 'required|min:3|max:1000',
+        ]);
 
         Mail::raw(
             "Name: {$this->name}\nEmail: {$this->email}\nQuestion: {$this->question}",
