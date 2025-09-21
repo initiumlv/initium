@@ -37,7 +37,6 @@
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center space-x-2">
-                    <flux:button x-on:click="$flux.dark = !$flux.dark" variant="ghost" size="sm" icon="moon" aria-label="Toggle dark mode" />
                     <flux:button variant="ghost" size="sm" icon="bars-3" x-on:click="mobileMenuOpen = !mobileMenuOpen" aria-label="Toggle menu" />
                 </div>
             </div>
