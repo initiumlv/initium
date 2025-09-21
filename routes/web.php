@@ -7,4 +7,5 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LanguageController;
 
 Route::get('/',\App\Livewire\Home::class)->name('home');
+Route::get('/risinajums/atskaites', \App\Livewire\ProductReports::class)->name('product.reports');
 Route::get('language/{locale}', [LanguageController::class, 'switch'])->name('language.switch');

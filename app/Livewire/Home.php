@@ -11,10 +11,13 @@ use Illuminate\Validation\ValidationException;
 class Home extends Component
 {
     public array $services = [];
-    public array $solutions = [];
     public array $menu = [];
     public array $technologies = [];
     public array $specializations = [];
+    public array $solutions = [];
+
+    // Form fields
+
 
     protected function rules(): array
     {
@@ -29,12 +32,12 @@ class Home extends Component
     {
         $this->menu = [
             [
-                'title' => __('Home'),
+                'title' => __('Sākums'),
                 'icon' => 'home',
                 'url' => '/'
             ],
             [
-                'title' => __('Open Source'),
+                'title' => __('Atvērtais kods'),
                 'icon' => 'code-bracket-square',
                 'url' => 'https://github.com/initiumlv'
             ]
@@ -42,36 +45,36 @@ class Home extends Component
 
         $this->specializations = [
             [
-                'title' => __('Retail'),
-                'description' => __('Point of sale systems, inventory management, and customer loyalty solutions'),
+                'title' => __('Mazumtirdzniecība'),
+                'description' => __('Kases sistēmas, krājumu vadība un klientu lojalitātes risinājumi'),
                 'icon' => 'shopping-bag',
                 'features' => [
-                    __('POS Systems'),
-                    __('Inventory Management'),
-                    __('Customer Loyalty'),
-                    __('E-commerce Integration')
+                    __('POS sistēmas'),
+                    __('Krājumu vadība'),
+                    __('Klientu lojalitāte'),
+                    __('E-komercijas integrācija')
                 ]
             ],
             [
-                'title' => __('Wholesale'),
-                'description' => __('B2B platforms, order management, and supplier integration solutions'),
+                'title' => __('Vairumtirdzniecība'),
+                'description' => __('B2B platformas, pasūtījumu vadība un piegādātāju integrācijas risinājumi'),
                 'icon' => 'truck',
                 'features' => [
-                    __('Order Management'),
-                    __('Supplier Portal'),
-                    __('Price Management'),
-                    __('Bulk Operations')
+                    __('Pasūtījumu vadība'),
+                    __('Piegādātāju portāls'),
+                    __('Cenu vadība'),
+                    __('Lielapjoma operācijas')
                 ]
             ],
             [
-                'title' => __('Warehouse'),
-                'description' => __('Warehouse management systems, logistics, and inventory tracking'),
+                'title' => __('Loģistika'),
+                'description' => __('Loģistikas vadības sistēmas, loģistika un krājumu izsekošana'),
                 'icon' => 'building-office',
                 'features' => [
-                    __('WMS Solutions'),
-                    __('Inventory Tracking'),
-                    __('Logistics Management'),
-                    __('Barcode Systems')
+                    __('NVS risinājumi'),
+                    __('Krājumu izsekošana'),
+                    __('Loģistikas vadība'),
+                    __('Svītrkodu sistēmas')
                 ]
             ],
         ];
@@ -79,179 +82,196 @@ class Home extends Component
         $this->technologies = [
             [
                 'name' => 'Laravel',
-                'description' => __('Modern PHP framework for web artisans'),
+                'description' => __('Mūsdienīgs PHP ietvars web izstrādātājiem'),
                 'icon' => 'code-bracket-square',
-                'category' => 'Backend'
+                'category' => 'Aizmugure'
             ],
             [
                 'name' => 'Livewire',
-                'description' => __('Full-stack framework for Laravel'),
+                'description' => __('Pilnas funkcionalitātes ietvars Laravel projektiem'),
                 'icon' => 'bolt',
-                'category' => 'Frontend'
+                'category' => 'Saskarne'
             ],
             [
                 'name' => 'Alpine.js',
-                'description' => __('Lightweight JavaScript framework'),
+                'description' => __('Viegls JavaScript ietvars'),
                 'icon' => 'code-bracket-square',
-                'category' => 'Frontend'
+                'category' => 'Saskarne'
             ],
             [
                 'name' => 'Tailwind CSS',
-                'description' => __('Utility-first CSS framework'),
+                'description' => __('Utilītu orientēts CSS ietvars'),
                 'icon' => 'paint-brush',
-                'category' => 'Frontend'
+                'category' => 'Saskarne'
             ],
             [
                 'name' => 'NativePHP',
-                'description' => __('Native mobile apps with Laravel'),
+                'description' => __('Natīvas mobilās aplikācijas ar Laravel'),
                 'icon' => 'device-phone-mobile',
-                'category' => 'Mobile'
+                'category' => 'Mobilās'
             ],
             [
                 'name' => 'MySQL',
-                'description' => __('Relational database management system'),
+                'description' => __('Relāciju datu bāzes vadības sistēma'),
                 'icon' => 'circle-stack',
-                'category' => 'Database'
+                'category' => 'Datu bāzes'
             ],
             [
                 'name' => 'Microsoft SQL Server',
-                'description' => __('Enterprise database management system'),
+                'description' => __('Uzņēmuma datu bāzes vadības sistēma'),
                 'icon' => 'circle-stack',
-                'category' => 'Database'
+                'category' => 'Datu bāzes'
             ],
             [
                 'name' => 'Laravel Cloud',
-                'description' => __('Managed hosting platform for Laravel applications'),
+                'description' => __('Pārvaldīta mitināšanas platforma Laravel aplikācijām'),
                 'icon' => 'cloud',
-                'category' => 'Cloud'
+                'category' => 'Mākonis'
             ],
             [
                 'name' => 'Filament',
-                'description' => __('Admin panel & form builder for Laravel'),
+                'description' => __('Administratīvais panelis un formu veidotājs Laravel projektiem'),
                 'icon' => 'adjustments-horizontal',
-                'category' => 'Admin'
+                'category' => 'Administrācija'
             ],
             [
                 'name' => 'Laravel Nova',
-                'description' => __('Premium administration panel for Laravel'),
+                'description' => __('Profesionāls administratīvais panelis Laravel projektiem'),
                 'icon' => 'sparkles',
-                'category' => 'Admin'
+                'category' => 'Administrācija'
             ],
             [
                 'name' => 'PHP',
-                'description' => __('Server-side scripting language for web development'),
+                'description' => __('Servera puses programmēšanas valoda web izstrādei'),
                 'icon' => 'code-bracket-square',
-                'category' => 'Backend'
+                'category' => 'Aizmugure'
             ],
             [
                 'name' => '.NET',
-                'description' => __('Cross-platform framework for building modern applications'),
+                'description' => __('Daudzplatformu ietvars mūsdienīgu aplikāciju veidošanai'),
                 'icon' => 'code-bracket-square',
-                'category' => 'Backend'
+                'category' => 'Aizmugure'
             ],
         ];
 
         $this->services = [
             [
-                'title' => __('Web Programming'),
-                'description' => __('Custom web applications and websites built with modern technologies'),
-                'icon' => 'code-bracket'
+                'title' => __('Web un mobilās aplikācijas'),
+                'description' => __('Pielāgotas web aplikācijas un mobilās lietotnes jebkurai nozarei'),
+                'details' => __('Radām dinamiskas web aplikācijas kuras piemērotas jebkurai ierīcei, kā arī mobilās aplikācijas. Specializējamies e-komercijas platformu izstrādē ar integrētiem maksājumu un noliktavu risinājumiem.'),
+                'icon' => 'code-bracket',
+                'features' => [
+                    __('Web aplikācijas'),
+                    __('Mājas lapas'),
+                    __('Mobilās aplikācijas'),
+                    __('E-komercijas risinājumi'),
+                    __('Pielāgots dizains jebkurai ierīcei'),
+                    __('API izstrāde')
+                ]
             ],
             [
-                'title' => __('Mobile Development'),
-                'description' => __('iOS and Android applications built with NativePHP'),
-                'icon' => 'device-phone-mobile'
+                'title' => __('Risinājumi biznesam'),
+                'description' => __('Pielāgotas programmatūras un biznesa procesu automatizācijas risinājumi'),
+                'details' => __('Izstrādājam biznesam paredzētas aplikācijas un risinājumus, CRM/ERP integrācijas un automatizācijas risinājumus. Specializējamies mazumtirdzniecības, vairumtirdzniecības un noliktavu specifisko risinājumu radīšanā.'),
+                'icon' => 'building-office-2',
+                'features' => [
+                    __('Pielāgotas biznesa aplikācijas'),
+                    __('CRM/ERP integrācijas'),
+                    __('Procesu automatizācija'),
+                    __('Noliktavu vadības sistēmas'),
+                    __('POS risinājumi')
+                ]
             ],
             [
-                'title' => __('E-Commerce Development'),
-                'description' => __('Custom e-commerce solutions with modern features and seamless payment integration'),
-                'icon' => 'shopping-cart'
+                'title' => __('Mākslīgais intelekts un Analītika'),
+                'description' => __('Mākslīgā intelekta risinājumi un datu analītikas sistēmas biznesa izaugsmei'),
+                'details' => __('Implementējam AI risinājumus biznesa procesu optimizācijai. Veidojam Power BI pārskatus un datu vizualizācijas, kas palīdz pieņemt datu vadītus lēmumus.'),
+                'icon' => 'cpu-chip',
+                'features' => [
+                    __('Virtualie asistenti'),
+                    __('Datu analīze un vizualizācija'),
+                    __('Power BI'),
+                    __('Datu prognozēšanas modeļi'),
+                    __('Automatizēta datu apstrāde')
+                ]
             ],
             [
-                'title' => __('AI Integrations'),
-                'description' => __('Intelligent solutions powered by artificial intelligence'),
-                'icon' => 'cpu-chip'
+                'title' => __('IT Atbalsts un Uzturēšana'),
+                'description' => __('Pilnvērtīgs IT atbalsts un sistēmu uzturēšana 24/7 režīmā'),
+                'details' => __('Nodrošinām nepārtrauktu IT atbalstu, sistēmu uzturēšanu un drošības atjauninājumus. Piedāvājam gan preventīvo uzturēšanu, gan operatīvo tehnisko atbalstu.'),
+                'icon' => 'wrench-screwdriver',
+                'features' => [
+                    __('24/7 tehniskais atbalsts'),
+                    __('Sistēmu uzturēšana'),
+                    __('Drošības atjauninājumi'),
+                    __('Rezerves kopīju risinājumi'),
+                ]
             ],
             [
-                'title' => __('Custom Applications'),
-                'description' => __('Tailored software solutions for your specific needs'),
-                'icon' => 'wrench-screwdriver'
+                'title' => __('Digitālais mārketings'),
+                'description' => __('Pilna spektra digitālā mārketinga risinājumi un SEO optimizācija'),
+                'details' => __('Palīdzam uzlabot jūsu tiešsaistes klātbūtni ar SEO optimizāciju, sociālo mediju mārketingu un datu vadītu reklāmu kampaņu vadību.'),
+                'icon' => 'megaphone',
+                'features' => [
+                    __('SEO optimizācija'),
+                    __('Sociālo mediju mārketings'),
+                    __('PPC reklāmu vadība'),
+                    __('E-pasta mārketings'),
+                    __('Konversiju analīze')
+                ]
             ],
             [
-                'title' => __('Analytics (Power BI)'),
-                'description' => __('Data-driven insights and visualizations with Power BI'),
-                'icon' => 'chart-bar'
-            ],
-            [
-                'title' => __('API Integrations'),
-                'description' => __('Seamless integration with third-party services and ERP systems'),
-                'icon' => 'arrow-path'
-            ],
+                'title' => __('Konsultācijas un Apmācības'),
+                'description' => __('IT konsultācijas un komandas apmācības modernajās tehnoloģijās'),
+                'details' => __('Piedāvājam tehnoloģiju konsultācijas, arhitektūras plānošanu un komandas apmācības vairākās tehnoloģijās. Atbalstām uzņēmumus jebkādos IT jautājumos - Windows, printeri, Excel problēmas un citas ikdienas tehnoloģiju vajadzības.'),
+                'icon' => 'academic-cap',
+                'features' => [
+                    __('Tehnoloģiju konsultācijas'),
+                    __('Sistēmu plānošana & ieviešana'),
+                    __('Komandas apmācības'),
+                ]
+            ]
         ];
 
         $this->solutions = [
             [
-                'title' => __('Search Engine Optimization'),
-                'description' => __('Comprehensive SEO strategies to improve your online visibility and drive organic traffic'),
-                'icon' => 'magnifying-glass',
+                'id' => 'product-reports',
+                'name' => __('Datu pārvaldības sistēma'),
+                'description' => __('Profesionāls risinājums uzņēmuma datu analizēšanai, atskaišu veidošanai un datu importam uz jebkuru sistēmu.'),
+                'fullDescription' => __('Atskaišu Pārvaldības Sistēma ir uz modernām tehnoloģijām balstīts risinājums, kas ļauj uzņēmumiem efektīvi pārvaldīt, analizēt un dalīties ar svarīgu biznesa informāciju. Sistēma ir īpaši izstrādāta, lai vienkāršotu sarežģītus datu apstrādes procesus un padarītu tos pieejamus ikvienam lietotājam ar nulles kļūdu līmeni un reāllaika piekļuvi datiem.'),
+                'icon' => 'document-chart-bar',
+                'image' => '/images/solutions/product-reports-dashboard.jpg', // Screenshot of the dashboard
                 'features' => [
-                    __('Technical SEO Optimization'),
-                    __('Keyword Research & Strategy'),
-                    __('Content Optimization'),
-                    __('Performance Analytics')
+                    __('80% ātrāka atskaišu izveide'),
+                    __('Individuālas atskaites katram uzņēmumam'),
+                    __('Individuāli importi katram uzņēmumam'),
+                    __('Daudzveidīgi datu avoti (Jumis, citas DB)'),
+                    __('Daudformātu eksports (Excel, JSON)'),
+                    __('Automātiskā e-pasta piegāde'),
+                    __('Komandas sadarbība un koplietošana'),
+                ],
+                'technologies' => ['Jumis','Horizon','E-Komercija', 'Datubāzes', 'API'],
+                'pricing' => __('Sākot no €29/mēnesī'),
+                'implementationTime' => __('1 - 7 dienas, atkarībā no prasībām'),
+                'support' => __('Pilns tehniskais atbalsts, apmācības, dokumentācija un regulāri atjauninājumi'),
+                'demo_available' => true,
+                'customizable' => true,
+                'deployment_options' => [
+                    'cloud' => __('Mākoņa versija - €29/mēnesī'),
+                    'desktop' => __('Windows lietotne - €199 vienreizējs'),
+                    'onpremise' => __('Lokāli izvietota - €499+')
+                ],
+                'key_benefits' => [
+                    __('10+ stundu ietaupījums nedēļā'),
+                    __('Tipiskā atmaksāšanās: 3-6 mēneši'),
+                    __('Nulles kļūdu līmenis'),
+                    __('Centralizēta datu pārvaldība')
                 ]
-            ],
-            [
-                'title' => __('Digital Marketing'),
-                'description' => __('Strategic digital marketing solutions to reach and engage your target audience'),
-                'icon' => 'megaphone',
-                'features' => [
-                    __('Social Media Marketing'),
-                    __('Email Marketing Campaigns'),
-                    __('PPC Advertising'),
-                    __('Marketing Automation')
-                ]
-            ],
-            [
-                'title' => __('IT Support'),
-                'description' => __('Comprehensive IT support and maintenance services to keep your systems running smoothly'),
-                'icon' => 'wrench-screwdriver',
-                'features' => [
-                    __('24/7 Technical Support'),
-                    __('System Maintenance'),
-                    __('Security Updates'),
-                    __('Performance Monitoring')
-                ]
-            ],
-            [
-                'title' => __('Analytics & Reporting'),
-                'description' => __('Data-driven insights and comprehensive reporting to measure and optimize your digital performance'),
-                'icon' => 'chart-bar',
-                'features' => [
-                    __('Performance Tracking'),
-                    __('Conversion Analytics'),
-                    __('Custom Reports'),
-                    __('ROI Measurement')
-                ]
-            ],
+            ]
         ];
     }
 
-    public function submit(): void
-    {
-        $this->validate();
 
-        Mail::raw(
-            "Name: {$this->name}\nEmail: {$this->email}\nQuestion: {$this->question}",
-            function ($message) {
-                $message->to('kristians@initium.lv')
-                        ->subject('New Question from Initium Landing Page');
-            }
-        );
-
-        $this->reset(['name', 'email', 'question']);
-        $this->sent = true;
-    }
 
     public function render()
     {
