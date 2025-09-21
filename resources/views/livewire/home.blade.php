@@ -33,7 +33,6 @@
                         <div class="font-medium">{{ config('contact.email') }}</div>
                         <div class="text-zinc-500 dark:text-zinc-400">{{ config('contact.phone') }}</div>
                     </div>
-
                 </div>
 
                 <!-- Mobile menu button -->
@@ -96,16 +95,16 @@
                     <!-- Feature highlights -->
                     <div class="flex flex-wrap justify-center gap-6 mb-12">
                         <div class="flex items-center text-zinc-600 dark:text-zinc-400">
-                            <x-heroicon-o-bolt class="w-5 h-5 text-blue-600 mr-2" />
-                            <span class="font-medium">{{ __('Atbalsts 24/7') }}</span>
+                            <x-heroicon-o-shopping-cart class="w-5 h-5 text-blue-600 mr-2" />
+                            <span class="font-medium">{{ __('Mazumtirdzniecība') }}</span>
                         </div>
                         <div class="flex items-center text-zinc-600 dark:text-zinc-400">
-                            <x-heroicon-o-shield-check class="w-5 h-5 text-green-600 mr-2" />
-                            <span class="font-medium">{{ __('Pielāgoti risinājum') }}</span>
+                            <x-heroicon-o-users class="w-5 h-5 text-green-600 mr-2" />
+                            <span class="font-medium">{{ __('Vairumtirdzniecība') }}</span>
                         </div>
                         <div class="flex items-center text-zinc-600 dark:text-zinc-400">
-                            <x-heroicon-o-cpu-chip class="w-5 h-5 text-indigo-600 mr-2" />
-                            <span class="font-medium">{{ __('Modernas tehnoloģijas') }}</span>
+                            <x-heroicon-o-truck class="w-5 h-5 text-indigo-600 mr-2" />
+                            <span class="font-medium">{{ __('Loģistika') }}</span>
                         </div>
                     </div>
 
