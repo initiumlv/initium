@@ -118,7 +118,7 @@
                         </flux:button>
 
                         @if(isset($sent) && $sent)
-                            <flux:callout variant="success" icon="check-circle" class="text-center">
+                            <flux:callout variant="success" icon="check-circle" class="text-dark!">
                                 <strong>{{ __('Paldies!') }}</strong> {{ __('Jūsu ziņa ir saņemta. Sazināsimies ar jums 24 stundu laikā.') }}
                             </flux:callout>
                         @endif
