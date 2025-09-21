@@ -599,7 +599,7 @@
                             <flux:icon.briefcase class="w-12 h-12 text-blue-600 mb-6 p-2 bg-blue-100 rounded-xl group-hover:scale-110 transition-transform" />
 
                             <flux:heading size="lg" class="text-gray-900 mb-4">
-                                {{ __('Uzņēmuma vadītājiem') }}
+                                {{ __('Vadītājiem') }}
                             </flux:heading>
 
                             <div class="space-y-3">
@@ -615,7 +615,7 @@
 
                                 <div class="text-black flex gap-2">
                                     <flux:icon.check class="w-4 h-4 text-green-600" />
-                                    {{ __('Uzņēmuma attīstības plānošana') }}
+                                    {{ __('Izdevumu un ienākumu analīze') }}
                                 </div>
                             </div>
                         </div>
@@ -632,25 +632,19 @@
                             <flux:icon.calculator class="w-12 h-12 text-green-600 mb-6 p-2 bg-green-100 rounded-xl group-hover:scale-110 transition-transform" />
 
                             <flux:heading size="lg" class="text-gray-900 mb-4">
-                                {{ __('Grāmatvežiem') }}
+                                {{ __('Datu ievades operātoriem') }}
                             </flux:heading>
 
                             <div class="space-y-3">
                                 <div class="text-black flex gap-2">
                                     <flux:icon.check class="w-4 h-4 text-green-600" />
-                                    {{ __('Finanšu atskaites') }}
+                                    {{ __('Savienojums ar jebkādu grāmatvedības programmatūru, e-komercijas sistēmu vai datubāzi') }}
                                 </div>
 
                                 <div class="text-black flex gap-2">
                                     <flux:icon.check class="w-4 h-4 text-green-600" />
-                                    {{ __('Izdevumu un ienākumu analīze') }}
+                                    {{ __('Izveidojams jebkāds datu imports uz sistēmu - Piemēram prece, cenas, dokumenti, atlaides, u.c') }}
                                 </div>
-
-                                        <div class="text-black flex gap-2">
-                                    <flux:icon.check class="w-4 h-4 text-green-600" />
-                                    {{ __('Tendenču identificēšana') }}
-                                </div>
-
                             </div>
                         </div>
                     </div>
@@ -747,7 +741,7 @@
                             <div class="space-y-3">
                                 <div class="text-black flex gap-2">
                                     <flux:icon.check class="w-4 h-4 text-green-600" />
-                                    {{ __('Intuitīva saskarne') }}
+                                    {{ __('Viegli lietojams un saprotams interfeiss') }}
                                 </div>
 
                                 <div class="text-black flex gap-2">
@@ -781,19 +775,22 @@
                             <div class="space-y-3">
                                 <div class="text-black flex gap-2">
                                     <flux:icon.check class="w-4 h-4 text-green-600" />
-                                    {{ __('Piekļuve no jebkuras vietas') }}
+                                    {{ __('Piekļuve no jebkuras vietas ar interneta savienojumu') }}
                                 </div>
 
                                 <div class="text-black flex gap-2">
                                     <flux:icon.check class="w-4 h-4 text-green-600" />
-                                    {{ __('Pieejams no jebkuras ierīces') }}
+                                    {{ __('Pieejams no jebkuras ierīces - datori, telefoni, planšetes') }}
+                                </div>
+
+                                <div class="text-black flex gap-2">
+                                    <flux:icon.check class="w-4 h-4 text-green-600" />
+                                    {{ __('Saderīga ar windows, linux, ios, andriod, macos operētajsistēmām') }}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </flux:card>
-
-
 
                 <!-- Integrations -->
                 <flux:card class="group transition-all duration-300 border-0!">
