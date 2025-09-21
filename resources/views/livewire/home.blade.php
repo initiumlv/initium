@@ -193,7 +193,7 @@
                 <div class="grid grid-cols-1 {{ count($solutions) > 2 ? 'lg:grid-cols-2' : '' }} gap-8">
                     @foreach($solutions as $solution)
                         <flux:card class="group hover:shadow-xl hover:shadow-green-500/5 transition-all duration-300 border border-zinc-200/50 dark:border-zinc-800/50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm hover:-translate-y-1 p-8">
-                            <div class="flex items-start gap-6">
+                            <div class="flex items-start md:flex-row flex-col gap-6">
                                 <!-- Icon -->
                                 <div class="flex-shrink-0">
                                     <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shadow-lg shadow-green-500/20">
@@ -239,17 +239,17 @@
                                     </div>
 
                                     <!-- Implementation Time -->
-                                    <div class="mb-6">
+                                 {{--    <div class="mb-6">
                                         <div class="flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-300">
                                             <x-heroicon-o-clock class="w-4 h-4 text-green-600" />
                                             <span><strong>Ieviešanas laiks:</strong> {{ $solution['implementationTime'] }}</span>
                                         </div>
-                                    </div>
+                                    </div> --}}
 
-                                    <a href="{{ route('product.reports') }}" class="inline-flex items-center justify-center px-4 py-2 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white text-sm font-medium rounded-lg transition-colors duration-200 group-hover:shadow-lg group-hover:shadow-green-500/25">
+                                    <flux:button href="{{ route('product.reports') }}" >
                                         {{ __('Pilna informācija') }}
                                         <x-heroicon-o-arrow-right class="w-4 h-4 ml-2" />
-                                    </a>
+                                    </flux:button> 
                                 </div>
                             </div>
                         </flux:card>

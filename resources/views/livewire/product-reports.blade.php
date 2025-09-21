@@ -48,7 +48,7 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
                         <div class="text-center p-4 border border-gray-200 rounded-lg bg-gray-50">
                             <div class="text-3xl font-bold text-green-600 mb-2">80%</div>
-                            <div class="text-sm text-gray-600">{{ __('Ātrāka izveide') }}</div>
+                            <div class="text-sm text-gray-600">{{ __('Darba efektivitātes pieaugums') }}</div>
                         </div>
                         <div class="text-center p-4 border border-gray-200 rounded-lg bg-gray-50">
                             <div class="text-3xl font-bold text-blue-600 mb-2">10+</div>
@@ -84,26 +84,10 @@
                 </div>
 
                 <!-- Right Column - Image/Demo -->
-                <div class="relative">
-                    <!-- Decorative Elements -->
-                    <div class="absolute -top-8 -right-8 w-32 h-32 border border-blue-200 rounded-full opacity-20"></div>
-                    <div class="absolute -bottom-8 -left-8 w-24 h-24 border border-indigo-200 rounded-full opacity-30"></div>
-
-                    <!-- Main Content Card -->
-                    <div class="relative bg-white rounded-2xl shadow-xl border border-gray-200 p-8">
-                        <!-- Decorative Lines Inside Card -->
-                        <div class="absolute top-0 left-8 w-px h-full bg-gradient-to-b from-blue-200 to-transparent opacity-30"></div>
-                        <div class="absolute top-8 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent opacity-30"></div>
-
-                        <!-- Content -->
-                        <div class="relative">
-                            <div class="aspect-video bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl flex items-center justify-center border border-gray-200">
+                <div>
+                     <div class="aspect-video border rounded border-gray-200">
                                 <img src="{{ asset('reports.png') }}" class="max-w-full max-h-full object-contain rounded-lg" alt="Reports Dashboard Preview" />
                             </div>
-
-
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -243,11 +227,6 @@
                                     {{ __('Elastīga filtrēšana') }}
                                 </div>
 
-                                <div class="text-black flex gap-2">
-                                    <flux:icon.check class="w-4 h-4 text-green-600" />
-                                    {{ __('Reāllaika datu apstrāde') }}
-                                </div>
-
                             </div>
                         </div>`
                     </div>
@@ -301,23 +280,18 @@
                             <flux:icon.envelope class="w-12 h-12 text-orange-600 mb-6 p-2 bg-orange-100 rounded-xl group-hover:scale-110 transition-transform" />
 
                             <flux:heading size="lg" class="text-gray-900 mb-4">
-                                {{ __('Automātiskā atskaišu piegāde e-pasta') }}
+                                {{ __('Automātiskā atskaišu piegāde e-pastā') }}
                             </flux:heading>
 
                             <div class="space-y-3">
                                 <div class="text-black flex gap-2">
                                     <flux:icon.check class="w-4 h-4 text-green-600" />
-                                    {{ __('Plānotā regulārā sūtīšana') }}
+                                    {{ __('Izveido elastīgu grafiku kurās dienās un laikos velies saņemt atskaiti') }}
                                 </div>
 
                                 <div class="text-black flex gap-2">
                                     <flux:icon.check class="w-4 h-4 text-green-600" />
-                                    {{ __('Elastīgi grafiki un laiki') }}
-                                </div>
-
-                                <div class="text-black flex gap-2">
-                                    <flux:icon.check class="w-4 h-4 text-green-600" />
-                                    {{ __('Vairāki saņēmēji vienlaicīgi') }}
+                                    {{ __('Pievieno vienu vai vairākus saņēmējus kam tiks nosūtīta atskaite') }}
                                 </div>
 
                             </div>
@@ -564,7 +538,7 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div class="text-center">
                             <div class="text-2xl font-bold text-blue-600 text-blue-600 mb-2">€40/h</div>
-                            <div class="text-sm text-gray-600">{{ __('Pielāgotas atskaites') }}</div>
+                            <div class="text-sm text-gray-600">{{ __('Izveide') }}</div>
                         </div>
                         <div class="text-center">
                             <div class="text-2xl font-bold text-green-600 text-green-600 mb-2">{{ __('Bezmaksas') }}</div>
