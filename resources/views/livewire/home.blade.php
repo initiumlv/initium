@@ -206,9 +206,9 @@
                                 <div class="flex-1 min-w-0">
                                     <div class="flex items-start justify-between gap-4 mb-3">
                                         <h3 class="text-2xl font-bold text-zinc-900 dark:text-white">{{ $solution['name'] }}</h3>
-                                        <span class="flex-shrink-0 inline-block px-3 py-1 bg-green-100 dark:bg-green-950/50 text-green-700 dark:text-green-300 text-sm font-medium rounded-full">
+                                       {{--  <span class="flex-shrink-0 inline-block px-3 py-1 bg-green-100 dark:bg-green-950/50 text-green-700 dark:text-green-300 text-sm font-medium rounded-full">
                                             {{ $solution['pricing'] }}
-                                        </span>
+                                        </span> --}}
                                     </div>
 
                                     <p class="text-zinc-600 dark:text-zinc-300 mb-4 leading-relaxed">{{ $solution['description'] }}</p>
