@@ -11,7 +11,9 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Company Info -->
                 <div class="lg:col-span-2">
-                    <flux:brand href="#" name="Initium" class="text-3xl font-bold bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent mb-4" />
+                    <flux:text href="#"  class="text-2xl font-bold text-white mb-4">
+                        {{ config('contact.company.name') }}
+                    </flux:text>
                     <p class="text-zinc-400 mb-6 leading-relaxed max-w-md">
                         {{ __('Profesionāli IT risinājumi mazumtirdzniecības, vairumtirdzniecības un loģistikai. Mūsdienīgas tehnoloģijas biznesa izaugsmei.') }}
                     </p>
@@ -45,7 +47,7 @@
                     <ul class="space-y-3 text-sm">
                         <li><a href="#industries" @click.prevent="scrollToSection('industries')" class="text-zinc-400 hover:text-white transition-colors">{{ __('Mazumtirdzniecība') }}</a></li>
                         <li><a href="#industries" @click.prevent="scrollToSection('industries')" class="text-zinc-400 hover:text-white transition-colors">{{ __('Vairumtirdzniecība') }}</a></li>
-                        <li><a href="#industries" @click.prevent="scrollToSection('industries')" class="text-zinc-400 hover:text-white transition-colors">{{ __('Noliktavas') }}</a></li>
+                        <li><a href="#industries" @click.prevent="scrollToSection('industries')" class="text-zinc-400 hover:text-white transition-colors">{{ __('Loģistika') }}</a></li>
                         <li><a href="#technologies" @click.prevent="scrollToSection('technologies')" class="text-zinc-400 hover:text-white transition-colors">{{ __('Tehnoloģijas') }}</a></li>
                         <li><a href="#contact" @click.prevent="scrollToSection('contact')" class="text-zinc-400 hover:text-white transition-colors">{{ __('Konsultācijas') }}</a></li>
                     </ul>
@@ -58,8 +60,8 @@
             <div class="flex flex-col md:flex-row justify-between items-center gap-4">
                 <!-- Company Details -->
                 <div class="text-center md:text-left">
-                    <div class="text-sm text-zinc-400">
-                        <span class="font-medium text-white">{{ config('contact.company.name') }}</span>
+                    <div class="text-sm">
+                        <span class="font-medium text-white!">{{ config('contact.company.name') }}</span>
                         @if(config('contact.company.reg_number'))
                             • {{ __('Reģ. Nr.') }} {{ config('contact.company.reg_number') }}
                         @endif
