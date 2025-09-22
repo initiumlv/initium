@@ -69,7 +69,7 @@
         <section id="hero" class="min-h-[80vh] flex items-center justify-between">
           
 
-            <div class="">
+            <div class="p-8 md:p-0">
                     <!-- Badge
                     <div class="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-950/50 border border-blue-200 dark:border-blue-800/50 text-blue-700 dark:text-blue-300 text-sm font-medium mb-8">
                         <x-heroicon-o-sparkles class="w-4 h-4 mr-2" />
