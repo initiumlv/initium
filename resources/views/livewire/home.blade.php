@@ -14,8 +14,13 @@
             <div class="flex justify-between items-center py-4">
                 <!-- Logo -->
                 <div class="flex items-center">
-                    <flux:brand href="#" name="Initium" class="text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent" />
-                </div>
+
+                        <h1 >
+                        <span class="text-3xl uppercase leading-4 font-bold text-zinc-700">
+                            Initium
+                        </span>
+                    </h1>
+                 </div>
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
@@ -61,66 +66,69 @@
 
     <main class="pt-16">
         <!-- Hero Section -->
-        <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-            <!-- Background gradient -->
-            <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-zinc-900 dark:via-zinc-900 dark:to-blue-950/20"></div>
+        <section id="hero" class="min-h-[80vh] flex items-center justify-between">
+          
 
-            <!-- Decorative elements -->
-            <div class="absolute inset-0 overflow-hidden">
-                <div class="absolute -top-40 -right-32 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-indigo-600/20 rounded-full blur-3xl"></div>
-                <div class="absolute -bottom-32 -left-32 w-80 h-80 bg-gradient-to-tr from-indigo-400/20 to-blue-600/20 rounded-full blur-3xl"></div>
-            </div>
-
-            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <div class="max-w-4xl mx-auto">
+            <div class="">
                     <!-- Badge
                     <div class="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-950/50 border border-blue-200 dark:border-blue-800/50 text-blue-700 dark:text-blue-300 text-sm font-medium mb-8">
                         <x-heroicon-o-sparkles class="w-4 h-4 mr-2" />
                         {{ __('Profesionāli IT pakalpojumi uzņēmumiem') }}
-                    </div> -->
 
                     <!-- Main heading -->
                     <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
-                        <span class="bg-gradient-to-r from-zinc-900 via-zinc-800 to-zinc-900 dark:from-white dark:via-zinc-100 dark:to-white bg-clip-text text-transparent">
+                        <span class="text-white/80 uppercase">
                             Initium
                         </span>
                     </h1>
 
                     <!-- Subheading -->
-                    <p class="text-xl md:text-2xl lg:text-3xl text-zinc-600 dark:text-zinc-300 mb-8 leading-relaxed max-w-3xl mx-auto">
+                    <p class="text-xl md:text-2xl lg:text-3xl text-white/70 mb-8 leading-relaxed max-w-3xl mx-auto">
                         {{ __('Mūsdienīgi IT risinājumi mazumtirdzniecības, vairumtirdzniecības un loģistikas nozarēm.') }}
                     </p>
 
                     <!-- Feature highlights -->
-                    <div class="flex flex-wrap justify-center gap-6 mb-12">
-                        <div class="flex items-center text-zinc-600 dark:text-zinc-400">
+                    <div class="flex flex-wrap gap-6 mb-6">
+                        <div class="flex items-cente text-zinc-300">
                             <x-heroicon-o-shopping-cart class="w-5 h-5 text-blue-600 mr-2" />
                             <span class="font-medium">{{ __('Mazumtirdzniecība') }}</span>
                         </div>
-                        <div class="flex items-center text-zinc-600 dark:text-zinc-400">
+                        <div class="flex items-center text-zinc-300">
                             <x-heroicon-o-users class="w-5 h-5 text-green-600 mr-2" />
                             <span class="font-medium">{{ __('Vairumtirdzniecība') }}</span>
                         </div>
-                        <div class="flex items-center text-zinc-600 dark:text-zinc-400">
+                        <div class="flex items-center text-zinc-300">
                             <x-heroicon-o-truck class="w-5 h-5 text-indigo-600 mr-2" />
                             <span class="font-medium">{{ __('Loģistika') }}</span>
                         </div>
                     </div>
 
-                    <!-- CTA buttons -->
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <div class="flex flex-wrap gap-6 mb-12">
+                        <div class="flex items-center text-zinc-300">
+                            <x-heroicon-o-globe-alt class="w-5 h-5 text-blue-600 mr-2" />
+                            <span class="font-medium">{{ __('Mājas lapas') }}</span>
+                        </div>
+                        <div class="flex items-center text-zinc-300">
+                            <x-heroicon-o-shopping-bag class="w-5 h-5 text-green-600 mr-2" />
+                            <span class="font-medium">{{ __('Interneta veikali') }}</span>
+                        </div>
+                        <div class="flex items-center text-zinc-300">
+                            <x-heroicon-o-device-phone-mobile class="w-5 h-5 text-indigo-600 mr-2" />
+                            <span class="font-medium">{{ __('Aplikācijas biznesam') }}</span>
+                        </div>
+                    </div>
 
-                        <flux:button variant="ghost" size="base" @click="scrollToSection('services')" class="px-8 py-3 text-lg">
+                    <!-- CTA buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+
+                        <flux:button variant="ghost" size="base" @click="scrollToSection('services')" class="px-8 py-3 text-lg text-white!">
                             {{ __('Uzzināt vairāk') }}
                             <x-heroicon-o-chevron-down class="w-4 h-4 ml-2" />
                         </flux:button>
                     </div>
                 </div>
-            </div>
 
-            <!-- Scroll indicator -->
-            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-                <x-heroicon-o-chevron-down class="w-6 h-6 text-zinc-400" />
+            <div>
             </div>
         </section>
 
@@ -362,4 +370,21 @@
         <livewire:contact />
     </main>
     <livewire:footer />
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            VANTA.NET({
+                el: "#hero",
+   mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x3f84ff
+            })
+        });
+</script>
 </div>
