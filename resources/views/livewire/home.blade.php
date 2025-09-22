@@ -279,7 +279,7 @@
                         {{ __('Mūsu specializācija') }}
                     </div>-->
                     <h2 class="text-4xl md:text-5xl font-bold text-zinc-900 dark:text-white mb-6">
-                        {{ __('Specializācija') }}
+                        {{ __('Nozares') }}
                     </h2>
                   <!--  <p class="text-xl text-zinc-600 dark:text-zinc-300 max-w-3xl mx-auto leading-relaxed">
                         {{ __('Specializējamies mazumtirdzniecībā, vairumtirdzniecībā un loģistikas risinājumos ar dziļu izpratni par katras nozares specifiku') }}
@@ -330,7 +330,7 @@
                         {{ __('Mūsu tehnoloģiju steks') }}
                     </div>-->
                     <h2 class="text-4xl md:text-5xl font-bold text-zinc-900 dark:text-white mb-6">
-                        {{ __('Izmantotās tehnoloģijas') }}
+                        {{ __('Tehnoloģijas') }}
                     </h2>
                     <!--<p class="text-xl text-zinc-600 dark:text-zinc-300 max-w-3xl mx-auto leading-relaxed">
                         {{ __('Izmantojam jaunākās un uzticamākās tehnoloģijas, lai radītu mūsdienīgus un ilgtspējīgus risinājumus') }}
