@@ -236,7 +236,7 @@ class Home extends Component
         $this->solutions = [
             [
                 'id' => 'product-reports',
-                'name' => __('Datu pārvaldības sistēma'),
+                'name' => __('Biznesa vadības centrs'),
                 'description' => __('Profesionāls risinājums uzņēmuma datu analizēšanai, atskaišu veidošanai un datu importam uz jebkuru sistēmu.'),
                 'fullDescription' => __('Atskaišu Pārvaldības Sistēma ir uz modernām tehnoloģijām balstīts risinājums, kas ļauj uzņēmumiem efektīvi pārvaldīt, analizēt un dalīties ar svarīgu biznesa informāciju. Sistēma ir īpaši izstrādāta, lai vienkāršotu sarežģītus datu apstrādes procesus un padarītu tos pieejamus ikvienam lietotājam ar nulles kļūdu līmeni un reāllaika piekļuvi datiem.'),
                 'icon' => 'document-chart-bar',

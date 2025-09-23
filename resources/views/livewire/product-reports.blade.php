@@ -37,7 +37,7 @@
                 <div>
 
                     <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                        {{ __('Datu Pārvaldības Sistēma') }}
+                        {{ __('Biznesa vadības centrs') }}
                     </h1>
 
                     <p class="text-xl text-gray-600 mb-8 leading-relaxed">
